@@ -2,10 +2,10 @@ package test;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.hamcrest.Matchers;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 
 public class C07_Get_BodyTekrarlardanKurtulma {
 
@@ -51,11 +51,11 @@ public class C07_Get_BodyTekrarlardanKurtulma {
                     .assertThat()
                     .statusCode(200)
                     .contentType("application/json; charset=utf-8")
-                    .body("firstname", Matchers.equalTo("Susan"),
-                            "lastname", Matchers.equalTo("Wilson"),
-                            "totalprice", Matchers.equalTo(673),
-                            "deposidpaid", Matchers.equalTo("false"),
-                            "additionalneeds", Matchers.equalTo("Breakfast"));
+                    .body("firstname", equalTo("Susan"),
+                            "lastname", equalTo("Wilson"),
+                            "totalprice", equalTo(673),
+                            "deposidpaid", equalTo("false"),
+                            "additionalneeds", equalTo("Breakfast"));
 
 
     }
