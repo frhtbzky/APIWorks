@@ -73,15 +73,6 @@ public class C06_Post_ResponseBodyTesti {
                     .body("body", Matchers.containsString("API"));
 
 
-
-
-
     }
-
-
-
-
-
-
 
 }

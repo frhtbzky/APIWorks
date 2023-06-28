@@ -45,10 +45,6 @@ public class C05_Get_ResponseBodyTesti {
                     .body("userId", Matchers.equalTo(5))
                     .body("title", Matchers.equalTo("optio dolor molestias sit"));
 
-
-
-
-
     }
 
 

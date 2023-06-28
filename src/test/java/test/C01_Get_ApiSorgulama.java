@@ -47,7 +47,6 @@ public class C01_Get_ApiSorgulama {
         System.out.println("Status Line : " + response.getStatusLine());
         System.out.println("Response Suresi : " + response.getTime());
 
-
     }
 
 }
